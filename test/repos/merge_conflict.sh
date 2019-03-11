@@ -75,7 +75,7 @@ git add .
 
 git commit -am "eighth commit woo"
 
-
+git checkout master
 git checkout -b develop
 echo "once upon a time there was a dog" >> file1
 add_spacing file1
@@ -85,7 +85,6 @@ echo "test2" > directory/file
 echo "test2" > directory/file2
 git add directory
 git commit -m "first commit on develop"
-
 
 git checkout master
 echo "once upon a time there was a cat" >> file1
@@ -97,10 +96,17 @@ echo "test3" > directory/file2
 git add directory
 git commit -m "first commit on master"
 
+echo "blah" > directory/file_blah1
+git add directory
+git commit -m "one blah commit on master"
+echo "blah" > directory/file_blah2
+git add directory
+git commit -m "two blah commit on master"
+
 
 git checkout develop
-echo "once upon a time there was a mouse" >> file3
-git add file3
+echo "once upon a time there was a mouse" >> file9
+git add file9
 git commit -m "second commit on develop"
 
 
@@ -108,29 +114,5 @@ git checkout master
 echo "once upon a time there was a horse" >> file3
 git add file3
 git commit -m "second commit on master"
-
-
-git checkout develop
-echo "once upon a time there was a mouse" >> file4
-git add file4
-git commit -m "third commit on develop"
-
-
-git checkout master
-echo "once upon a time there was a horse" >> file4
-git add file4
-git commit -m "third commit on master"
-
-
-git checkout develop
-echo "once upon a time there was a mouse" >> file5
-git add file5
-git commit -m "fourth commit on develop"
-
-
-git checkout master
-echo "once upon a time there was a horse" >> file5
-git add file5
-git commit -m "fourth commit on master"
 
 # git merge develop # should have a merge conflict here
