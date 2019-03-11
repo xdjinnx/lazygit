@@ -24,7 +24,6 @@ import (
 	"github.com/jesseduffield/lazygit/pkg/config"
 	"github.com/jesseduffield/lazygit/pkg/i18n"
 	"github.com/jesseduffield/lazygit/pkg/updates"
-	"github.com/jesseduffield/lazygit/pkg/utils"
 	"github.com/sirupsen/logrus"
 )
 
@@ -285,7 +284,7 @@ func (gui *Gui) layout(g *gocui.Gui) error {
 	commitsBranchesBoundary := 3 * height / 5
 	optionsTop := height - 2
 	commitsStashBoundary := optionsTop - 3
-	optionsVersionBoundary := width - max(len(utils.Decolorise(information)), 1)
+	optionsVersionBoundary := width
 	minimumHeight := 18
 	minimumWidth := 10
 
