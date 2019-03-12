@@ -666,6 +666,12 @@ func addEnglish(i18nObject *i18n.Bundle) error {
 		}, &i18n.Message{
 			ID:    "CherryPickingStatus",
 			Other: "cherry-picking",
+		}, &i18n.Message{
+			ID:    "executeCustomCommand",
+			Other: "execute custom command",
+		}, &i18n.Message{
+			ID:    "CustomCommand",
+			Other: "Custom Command:",
 		},
 	)
 }
