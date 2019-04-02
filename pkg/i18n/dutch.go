@@ -694,6 +694,9 @@ func addDutch(i18nObject *i18n.Bundle) error {
 		}, &i18n.Message{
 			ID:    "hardReset",
 			Other: "hard reset",
+		}, &i18n.Message{
+			ID:    "resetTo",
+			Other: `reset to`,
 		},
 	)
 }

@@ -717,6 +717,9 @@ func addEnglish(i18nObject *i18n.Bundle) error {
 		}, &i18n.Message{
 			ID:    "viewResetOptions",
 			Other: `view reset options`,
+		}, &i18n.Message{
+			ID:    "resetTo",
+			Other: `reset to`,
 		},
 	)
 }
